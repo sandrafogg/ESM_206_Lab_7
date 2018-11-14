@@ -12,3 +12,5 @@ knitr::opts_chunk$set(echo = TRUE)
 This is Sandy here, lets check out chi-squared tests!
 
 Sandy again, can you see it?
+
+The stars sparkle in the wilderness. 
