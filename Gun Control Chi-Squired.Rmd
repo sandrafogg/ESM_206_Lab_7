@@ -14,3 +14,27 @@ This is Sandy here, lets check out chi-squared tests!
 Sandy again, can you see it?
 
 The stars sparkle in the wilderness. 
+
+Creator: Sandra
+
+Read gc_df.csv data, load tidyverse, and obtaining summary counts
+```{r}
+# Load necessary packages
+library(tidyverse)
+
+# Load Files
+gc_df <- read_csv("gc_df.csv")
+
+# Does sex of respondent significantly affect perception of gun restrictions
+
+# Use count function -> allows to set groupings for different categorical variables -> count how many times a #certain response occurs in the "make_get_guns" column -> Must make in contingency table format -> use a 
+#function called spread -> key value in pairs -> make values (ie count) -> only want count values so we must #remove gender column (rembering female is first row)
+
+get_guns_df <- gc_df %>% 
+  filter(gender != "NA", make_get_guns != "NA") %>% 
+  count(gender, make_get_guns) %>% 
+  spread(make_get_guns, n) %>% 
+  select(-gender)
+
+
+
