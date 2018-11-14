@@ -1,0 +1,12 @@
+---
+title: "Gun Control chi-Squared"
+author: "Sandra Fogg"
+date: "11/14/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is Sandy here, lets check out chi-squared tests!
