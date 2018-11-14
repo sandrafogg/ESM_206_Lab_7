@@ -43,6 +43,21 @@ Collaborator for Chi-Squared. Is there a significant difference in gun control p
 
 Is there a significant association between sex and gun control recommendation?
 
+Is there a significant difference between gun control perspectives, as related to access to guns, based on gender?  Is there a significant association between sex and gun control recommnedations? Is perception of gun control access independent of sex
+
+After looking at the guns_prop - > this is a massive disparity in gun control access -> a huge gap 40-60%
+
+If we are considering populations (one with female and one with male) - do i think that these responses are drawn from different populations
+
+Just run chi-squared codetools
+
+Degrees of freedom are equal to 2 -> number of columns - 1 multiplieby the number of rows - 1 
+
+H0: There is no association between gender and gun restriction perception
+HA: There is no association between gender and gun restriction perception
+
+Recommended government action on gun access differs significantly for males and females ($\chi^2$(` r guns_x2$parameter`) = ..... p < 0.001).  Show table for actual analysis and also include table of proportions. Include notable difference for audience. Make easiest for them to understand biggest gap. GIVE VALUES of proportional differences in conclusion. 
+
 Chi-Square
 ```{r}
 
